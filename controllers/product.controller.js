@@ -164,7 +164,7 @@ async function deleteProduct(req, res) {
     await model.Product.destroy({
       where: { id: productId, userId: req.userAuth.userId }
     })
-      .then(res.status(204))
+      .then(res.status(200).send('product deleted'))
       .catch((err) => {
         res.status(400).send(err, ': Item could not be removed.');
       });

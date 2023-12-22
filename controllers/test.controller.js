@@ -8,7 +8,9 @@ async function test(req, res) {
 
   const userProducts = await models.Product.findAll({
     where: { userId },
-    include: [{ model: models.Category, attributes: ['id', 'name'] }]
+    include: [
+      { model: models.Category, as: 'category', attributes: ['id', 'name'] }
+    ]
   });
   res.status(200).json(userProducts);
 }
