@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "NAME OF DB",
+    "host": "localhost",
+    "dialect": "[mysql | postgres | sqlite etc]",
+    use_env_variable: "CONNECTION URL TO DB SERVER"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "NAME OF DB",
+    "host": "localhost",
+    "dialect": "[mysql | postgres | sqlite etc]"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "NAME OF DB",
+    "host": "localhost",
+    "dialect": "[mysql | postgres | sqlite etc]"
+  }
+}
